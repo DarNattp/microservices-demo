@@ -123,7 +123,7 @@ sonarqube {
         property 'sonar.projectKey', 'adservice'
         property 'sonar.projectName', 'adservice'
         property "sonar.host.url", "https://sonar.creativebox.dev/"
-        property "sonar.java.binaries", "build/classes/java/main" 
+        property "sonar.java.binaries", "build/output/lib" 
 
     }
 }
