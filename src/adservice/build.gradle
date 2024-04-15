@@ -119,8 +119,8 @@ applicationDistribution.into('bin') {
 
 sonarqube {
     properties {
+        property "sonar.sourceEncoding", "UTF-8"
         property 'sonar.projectKey', 'adservice'
         property 'sonar.projectName', 'adservice'
-        property 'sonar.java.binaries', 'build/classes/java/main'
     }
 }
