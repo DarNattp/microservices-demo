@@ -123,6 +123,5 @@ sonarqube {
         property 'sonar.projectKey', 'adservice'
         property 'sonar.projectName', 'adservice'
         property "sonar.host.url", "https://sonar.creativebox.dev/"
-        property "sonar.login", "squ_0a340084f237b3176f653210123a749035ec0a7d"
     }
 }
