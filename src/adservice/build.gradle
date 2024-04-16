@@ -117,13 +117,13 @@ applicationDistribution.into('bin') {
     fileMode = 0755
 }
 
-sonarqube {
-    properties {
-        property "sonar.sourceEncoding", "UTF-8"
-        property 'sonar.projectKey', 'adservice'
-        property 'sonar.projectName', 'adservice'
-        property "sonar.host.url", "https://sonar.creativebox.dev/"
-        property "sonar.java.binaries", "build/output/lib" 
+// sonarqube {
+//     properties {
+//         property "sonar.sourceEncoding", "UTF-8"
+//         property 'sonar.projectKey', 'adservice'
+//         property 'sonar.projectName', 'adservice'
+//         property "sonar.host.url", "https://sonar.creativebox.dev/"
+//         property "sonar.java.binaries", "build/output/lib" 
 
-    }
-}
+//     }
+// }
