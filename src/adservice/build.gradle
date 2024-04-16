@@ -126,4 +126,4 @@ applicationDistribution.into('bin') {
 //         property "sonar.java.binaries", "build/output/lib" 
 
 //     }
-}
+// }
