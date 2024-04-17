@@ -4,6 +4,7 @@ plugins {
     id 'idea'
     id 'application'
     id 'org.sonarqube' version '5.0.0.4638'
+    id 'org.owasp.dependencycheck' version '7.1.1'
 }
 
 repositories {
@@ -117,13 +118,22 @@ applicationDistribution.into('bin') {
     fileMode = 0755
 }
 
-// sonarqube {
-//     properties {
-//         property "sonar.sourceEncoding", "UTF-8"
-//         property 'sonar.projectKey', 'adservice'
-//         property 'sonar.projectName', 'adservice'
-//         property "sonar.host.url", "https://sonar.creativebox.dev/"
-//         property "sonar.java.binaries", "build/output/lib" 
-
-//     }
-// }
+dependencyCheck {
+    analyzers {
+        experimentalEnabled = true
+        archiveEnabled = true
+        assemblyEnabled = true
+        cmakeEnabled = true
+        cocoapodsEnabled = true
+        composerEnabled = true
+        golangDepEnabled = true
+        golangModEnabled = true
+        nodeEnabled = true
+        nugetconfEnabled = true
+        nuspecEnabled = true
+        pyDistributionEnabled = true
+        pyPackageEnabled = true
+        rubygemsEnabled = true
+        swiftEnabled = true
+    }
+}
